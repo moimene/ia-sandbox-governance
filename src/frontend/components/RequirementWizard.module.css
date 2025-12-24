@@ -1,0 +1,137 @@
+.wizardContainer {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+.wizardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-white);
+}
+
+.requirementInfo h2 {
+    margin: var(--spacing-xs) 0;
+    color: var(--color-white);
+}
+
+.requirementCode {
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+}
+
+.articleRef {
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+}
+
+.progressInfo {
+    text-align: right;
+    font-size: var(--font-size-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+/* Tab Navigation */
+.tabNav {
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 1px solid var(--color-gray-200);
+    background: var(--color-gray-50);
+}
+
+.tabBtn {
+    flex: 1;
+    min-width: 100px;
+    padding: var(--spacing-md) var(--spacing-sm);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+    border-bottom: 3px solid transparent;
+    transition: all var(--transition-fast);
+    color: var(--color-gray-500);
+}
+
+.tabBtn:hover:not(:disabled) {
+    background: var(--color-gray-100);
+}
+
+.tabBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.tabBtn.active {
+    background: var(--color-white);
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.tabBtn.completed {
+    color: var(--color-success);
+}
+
+.tabNumber {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-gray-300);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+}
+
+.tabBtn.active .tabNumber {
+    background: var(--color-primary);
+}
+
+.tabBtn.completed .tabNumber {
+    background: var(--color-success);
+}
+
+.tabName {
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
+}
+
+/* Tab Content */
+.tabContent {
+    padding: var(--spacing-2xl);
+    min-height: 400px;
+}
+
+/* Footer */
+.wizardFooter {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background: var(--color-gray-50);
+    border-top: 1px solid var(--color-gray-200);
+}
+
+.wizardFooter .progressBar {
+    flex: 1;
+    height: 8px;
+    background: var(--color-gray-200);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.wizardFooter .progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-success) 100%);
+    transition: width var(--transition-normal);
+}

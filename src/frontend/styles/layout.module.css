@@ -1,0 +1,70 @@
+.header {
+    background: var(--color-primary);
+    padding: var(--spacing-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logoText {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+}
+
+.navLinks {
+    display: flex;
+    gap: var(--spacing-xl);
+}
+
+.navLinks a {
+    color: var(--color-white);
+    font-weight: var(--font-weight-medium);
+    opacity: 0.9;
+    transition: opacity var(--transition-fast);
+    text-decoration: none;
+}
+
+.navLinks a:hover {
+    opacity: 1;
+    color: var(--color-white);
+}
+
+.loginBtn {
+    background: var(--color-white);
+    color: var(--color-primary) !important;
+    padding: var(--spacing-xs) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-semibold) !important;
+    opacity: 1 !important;
+}
+
+.loginBtn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.logoutBtn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--color-white);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+}
+
+.logoutBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-white);
+}

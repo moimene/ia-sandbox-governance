@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/enisaweb/favicon.ico" type="image/png" />
+<link rel="canonical" href="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2025" />
+<link rel="shortlink" href="https://www.enisa.europa.eu/node/19313" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <meta content="ENISA: Every day we experience the Information Society. Interconnected networks touch our everyday lives, at home and at work. It is therefore vital that computers, mobile phones, banking, and the Internet  function, to support Europe’s digital economy. That is why ENISA is working with Cybersecurity for the EU and the Member States." name="DC.description">
+    <meta name="description" content="ENISA is the EU agency dedicated to enhancing cybersecurity in Europe. They offer guidance, tools, and resources to safeguard citizens and businesses from cyber threats.">
+    <meta name="keywords" content="Cybersecurity, EU, ENISA, computer security, Cyber Threats, EU Cyber Crisis, Incident Management, Market and Standards, Product Security, Security certification, Risk Management, Skills and competences, State of cybersecurity in the EU, Vulnerability Disclosure, Artificial Intelligence, Next Gen Technologies, Awareness, Cyber Hygiene, Digital Identity, Data Protection, Education and career path">    
+    <title>ENISA Threat Landscape 2025 | ENISA</title>
+
+    <link rel="stylesheet" media="all" href="/core/themes/stable9/css/core/components/progress.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/core/components/ajax-progress.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/align.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/fieldgroup.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/container-inline.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/clearfix.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/details.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/hidden.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/item-list.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/js.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/nowrap.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/position-container.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/reset-appearance.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/resize.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/system-status-counter.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/system-status-report-counters.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/system-status-report-general-info.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/system/components/tablesort.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/themes/base/core.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/themes/base/tabs.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/views/views.module.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/addtoany/css/addtoany.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/themes/base/theme.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/blocktabs/css/blocktabs.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/ckeditor_accordion/css/accordion.frontend.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/social_media_links/css/social_media_links.theme.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/we_megamenu/assets/includes/bootstrap/css/bootstrap.min.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/modules/contrib/we_megamenu/assets/css/we_megamenu_backend.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/core/themes/stable9/css/core/assets/vendor/normalize-css/normalize.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/progress.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/action-links.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/breadcrumb.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/container-inline.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/details.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/exposed-filters.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/field.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/form.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/icons.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/inline-form.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/item-list.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/links.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/menu.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/more-link.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/pager.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/tabledrag.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/tableselect.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/tablesort.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/textarea.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/ui-dialog.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/messages.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/components/node.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/style.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/enisafonts.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/enisaweb.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/nis2_style.css?t7gvm4" />
+<link rel="stylesheet" media="all" href="/themes/custom/enisaweb/css/cookies.css?t7gvm4" />
+
+    
+
+  </head>
+  <body class="path-node page-node-type-publications   d-flex flex-column h-100">
+
+    
+      <div class="dialog-off-canvas-main-canvas d-flex flex-column h-100" data-off-canvas-main-canvas>
+    
+
+
+<header>
+  <p class="sr-only"><a href="#main-content" accesskey="M">Go to the main content</a></p>
+  
+    <div class="navbar navbar-expand-lg navbar-dark text-light bg-primary header">
+    <div class="container logo-menu-wrapper d-flex">
+
+        <div class="region region-nav-branding">
+    <div id="block-enisaweb-branding" class="block block-system block-system-branding-block">
+  
+    
+  <div class="navbar-brand d-flex align-items-center">
+
+    <a href="/" title="Home" rel="home" class="site-logo d-block">
+    <img src="/themes/custom/enisaweb/enisa_logo.svg" alt="Home" fetchpriority="high" />
+  </a>
+  
+  <div>
+    
+      </div>
+</div>
+</div>
+
+  </div>
+
+
+              <nav class="collapse navbar-collapse justify-content-end main-menu" id="navbarSupportedContent"  role="navigation"  aria-label="Main menu and Search box">
+            <div class="region region-nav-main">
+    <div id="block-enisaweb-mainnavigation-2" class="block block-we-megamenu block-we-megamenu-blockmain">
+  
+    
+      <div class="region-we-mega-menu">
+	<a href="javascript:" class="navbar-toggle collapsed" aria-label="Open/close menu" aria-controls="mainMenuResponsive" name="menu-button" role="button">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	</a>
+	<nav  class="main navbar navbar-default navbar-we-mega-menu mobile-collapse hover-action" data-menu-name="main" data-block-theme="enisaweb" data-style="Default" data-animation="None" data-delay="" data-duration="" data-autoarrow="" data-alwayshowsubmenu="" data-action="hover" data-mobile-collapse="0" aria-label="ENISA main menu" id="mainMenuResponsive">
+	  <div class="container-fluid">
+	    <ul  class="we-mega-menu-ul nav nav-tabs">
+  <li class="we-mega-menu-li justify dropdown-menu" title="" data-level="0"  data-element-type=""  data-id="320e2c86-310b-4f7b-a4a9-188df34c3e43" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-caption=""  data-alignsub="justify" data-target="" data-icon=""  >
+          <span class="we-megamenu-nolink">
+      Topics</span>
+        <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px">
+  <div class="we-mega-menu-submenu-inner">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="1">
+  <div  class="we-mega-menu-col span3" data-element-type="we-mega-menu-col" data-width="3" data-block="enisaweb_topics" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-topics" class="block block-block-content block-block-contentec3f1f7d-35d4-4776-a03c-7f97a2fcfc8f">
+  
+      <p class="title"><a href="/topics" target="_self" title="Access  to All Topics page">Topics</a></p>
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Learn more about the topics</p><p><a class="button" href="/topics" data-entity-type="node" data-entity-uuid="5f4db810-e19d-49a4-baaa-86ec782eb91e" data-entity-substitution="canonical" title="All topics page">Access</a></p></div>
+      
+  </div>
+</div></div>
+
+</div>
+<div  class="we-mega-menu-col span3" data-element-type="we-mega-menu-col" data-width="3" data-block="enisaweb_views_block__topics_tax_block_1" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div class="views-element-container block block-views block-views-blocktopics-tax-block-1" id="block-enisaweb-views-block-topics-tax-block-1">
+  
+      <p class="title"><a href="/audience/national-eu-authorities" target="_self" title="Access to For National / EU authorities page">For National / EU authorities</a></p>
+    
+      <div data-block="nav_main"><div class="view view-topics-tax view-id-topics_tax view-display-id-block_1 js-view-dom-id-a3f09eced2d7403d44af8117e29fc6c05795aa6b2221cf7db3eace8cc4bf80d1">
+  
+    
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><a href="/topics/cyber-threats" hreflang="en">Cyber Threats</a></li>
+          <li><a href="/topics/eu-incident-response-and-cyber-crisis-management" hreflang="en">EU incident response and cyber crisis management</a></li>
+          <li><a href="/topics/market" hreflang="en">Market</a></li>
+          <li><a href="/topics/product-security-and-certification" hreflang="en">Product Security and Certification</a></li>
+          <li><a href="/topics/risk-management" hreflang="en">Risk Management</a></li>
+          <li><a href="/topics/skills-and-competences" hreflang="en">Skills and competences</a></li>
+          <li><a href="/topics/state-of-cybersecurity-in-the-eu" hreflang="en">State of cybersecurity in the EU</a></li>
+          <li><a href="/topics/vulnerability-disclosure" hreflang="en">Vulnerability Disclosure</a></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        </div>
+</div>
+
+  </div></div></div>
+
+</div>
+<div  class="we-mega-menu-col span3" data-element-type="we-mega-menu-col" data-width="3" data-block="enisaweb_views_block__topics_tax_block_2" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div class="views-element-container title block block-views block-views-blocktopics-tax-block-2" id="block-enisaweb-views-block-topics-tax-block-2">
+  
+      <p class="title"><a href="/audience/private-sector" target="_self" title="Access  to Private Sector page">Private Sector</a></p>
+    
+      <div data-block="nav_main"><div class="view view-topics-tax view-id-topics_tax view-display-id-block_2 js-view-dom-id-e6ae00f126e48c17967b97e175fe8b44e60ec17a6e4e183593389de3ce70d08d">
+  
+    
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><a href="/topics/artificial-intelligence-and-next-gen-technologies" hreflang="en">Artificial Intelligence and Next Gen Technologies</a></li>
+          <li><a href="/topics/awareness-and-cyber-hygiene" hreflang="en">Awareness and Cyber Hygiene</a></li>
+          <li><a href="/topics/certification-and-standards" hreflang="en">Certification and Standards</a></li>
+          <li><a href="/topics/cyber-threats" hreflang="en">Cyber Threats</a></li>
+          <li><a href="/topics/cybersecurity-of-critical-sectors" hreflang="en">Cybersecurity of Critical Sectors</a></li>
+          <li><a href="/topics/digital-identity-and-data-protection" hreflang="en">Digital Identity and Data Protection</a></li>
+          <li><a href="/topics/incident-management" hreflang="en">Incident management</a></li>
+          <li><a href="/topics/risk-management" hreflang="en">Risk Management</a></li>
+          <li><a href="/topics/skills-and-competences-for-companies" hreflang="en">Skills and competences (for companies)</a></li>
+          <li><a href="/topics/vulnerability-disclosure" hreflang="en">Vulnerability Disclosure</a></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        </div>
+</div>
+
+  </div></div></div>
+
+</div>
+<div  class="we-mega-menu-col span3" data-element-type="we-mega-menu-col" data-width="3" data-block="enisaweb_views_block__topics_tax_block_3" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div class="views-element-container title block block-views block-views-blocktopics-tax-block-3" id="block-enisaweb-views-block-topics-tax-block-3">
+  
+      <p class="title"><a href="/audience/citizens" target="_self" title="Access  to Citizens page">Citizens</a></p>
+    
+      <div data-block="nav_main"><div class="view view-topics-tax view-id-topics_tax view-display-id-block_3 js-view-dom-id-05648e5ecde64d42f01b6b1bb0a5804005a64eaf295188ad66e80de99f27a35d">
+  
+    
+      
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li><a href="/topics/cyber-hygiene" hreflang="en">Cyber Hygiene</a></li>
+          <li><a href="/topics/cyber-incident-awareness" hreflang="en">Cyber Incident Awareness</a></li>
+          <li><a href="/topics/education-and-career-path" hreflang="en">Education and career path</a></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+        </div>
+</div>
+
+  </div></div></div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+</li><li class="we-mega-menu-li" title="Access to all publications" data-level="0"  data-element-type=""  data-id="2d24a690-803d-44ad-8d7e-8cf0eb7d0e40" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-caption=""  data-alignsub="" data-target="_self" data-icon=""  >
+      <a class="we-mega-menu-li" title="" href="/publications" target="_self">
+      Publications    </a>
+    
+</li><li class="we-mega-menu-li dropdown-menu" title="" data-level="0"  data-element-type=""  data-id="54b069d8-f99f-45e7-9d50-9345e82ad14f" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-caption=""  data-alignsub="" data-target="" data-icon=""  >
+          <span class="we-megamenu-nolink">
+      Newsroom &amp; Events</span>
+        <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px">
+  <div class="we-mega-menu-submenu-inner">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="1">
+  <div  class="we-mega-menu-col span4" data-element-type="we-mega-menu-col" data-width="4" data-block="enisaweb_news" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-news" class="block block-block-content block-block-content00f65cb0-e1b0-41a1-8a0d-00ce6ced0f0e">
+  
+      <p class="title"><a href="/news" target="_self" title="Access  to All News">News</a></p>
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Cybersecurity in focus: News &amp; updates from ENISA</p><p><a class="button" href="/news" data-entity-type="node" data-entity-uuid="088dd847-33ff-4c8e-b094-f0d38a66bbdd" data-entity-substitution="canonical" title="All News page">Access</a></p></div>
+      
+  </div>
+</div></div>
+
+</div>
+<div  class="we-mega-menu-col span4" data-element-type="we-mega-menu-col" data-width="4" data-block="enisaweb_events" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-events" class="block block-block-content block-block-contentb3c06780-f342-437d-9828-54fe86eb9786">
+  
+      <p class="title"><a href="/events" target="_self" title="Access  to All Events">Events</a></p>
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Cybersecurity in practice: Events &amp; Workshops by ENISA</p><p><a class="button" href="/events" data-entity-type="node" data-entity-uuid="34f66c6d-0f07-4977-85e3-e8578a59d59c" data-entity-substitution="canonical" title="All Events page">Access</a></p></div>
+      
+  </div>
+</div></div>
+
+</div>
+<div  class="we-mega-menu-col span4" data-element-type="we-mega-menu-col" data-width="4" data-block="enisaweb_pressoffice" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-pressoffice" class="block block-system block-system-menu-blockpress-office">
+  
+      <p class="title"><a href="/press-office" target="_self" title="Access  to Press office page">Press office</a></p>
+    
+      
+              <ul data-block="nav_main" class="nav navbar-nav">
+                    <li class="nav-item">
+        <a href="/press-office/corporate-identity" class="nav-link" data-drupal-link-system-path="node/11030">Corporate identity</a>
+              </li>
+                <li class="nav-item">
+        <a href="/press-office/cybersecurity-material" class="nav-link" data-drupal-link-system-path="node/11031">Cybersecurity material</a>
+              </li>
+                <li class="nav-item">
+        <a href="/form/seek-an-expert" class="nav-link" data-drupal-link-system-path="webform/seek_an_expert">Seek an expert or Request a speaker</a>
+              </li>
+        </ul>
+  
+
+
+  </div></div></div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+</li><li class="we-mega-menu-li dropdown-menu" title="" data-level="0"  data-element-type=""  data-id="eaba29ce-6446-4da3-930a-c3d97495f00b" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-caption=""  data-alignsub="" data-target="" data-icon=""  >
+          <span class="we-megamenu-nolink">
+      About</span>
+        <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px">
+  <div class="we-mega-menu-submenu-inner">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="1">
+  <div  class="we-mega-menu-col span4" data-element-type="we-mega-menu-col" data-width="4" data-block="enisaweb_whatwedosubmenubutton_2" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-whatwedosubmenubutton-2" class="block block-block-content block-block-contente0a96203-1eca-4991-9533-33064cace452">
+  
+      <p class="title"><a href="/about-enisa/what-we-do" target="_self" title="Access  to What we do page">What we do</a></p>
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Achieving a high common level of cybersecurity across Europe</p><p><a class="button" href="/about-enisa/what-we-do" data-entity-type="node" data-entity-uuid="0619d110-d4dc-4f6b-aa0d-9a56252da07d" data-entity-substitution="canonical" title="What we do page">Access</a></p></div>
+      
+  </div></div></div>
+
+</div>
+<div  class="we-mega-menu-col span4" data-element-type="we-mega-menu-col" data-width="4" data-block="enisaweb_whatwedosubmenu_2" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-whatwedosubmenu-2" class="block block-block-content block-block-content99599d89-56f7-43f1-907b-72614045018d">
+  
+      <p class="title"><a href="/about-enisa/who-we-are" target="_self" title="Access  to Who we are page">Who we are</a></p>
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Towards a Trusted and Cyber Secure Europe&nbsp;</p><p><a class="button" href="/about-enisa/who-we-are" data-entity-type="node" data-entity-uuid="3c46c210-298c-472c-b871-b167dfe2642c" data-entity-substitution="canonical" title="Who we are page">Access</a></p></div>
+      
+  </div></div></div>
+
+</div>
+<div  class="we-mega-menu-col span4" data-element-type="we-mega-menu-col" data-width="4" data-block="enisaweb_transparency" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-transparency" class="block block-system block-system-menu-blocktransparency">
+  
+      <p class="title"><a href="/about-enisa/How-we-work" target="_self" title="Access  to How we work page">How we work</a></p>
+    
+      
+              <ul data-block="nav_main" class="nav navbar-nav">
+                    <li class="nav-item">
+        <a href="/about-enisa/accounting-finance/accounting-finance" class="nav-link" data-drupal-link-system-path="node/17339">Accounting and Finance</a>
+              </li>
+                <li class="nav-item">
+        <a href="/about-enisa/procedures-and-policies" class="nav-link dropdown-toggle" data-drupal-link-system-path="node/17360">Policies and Procedures</a>
+              </li>
+                <li class="nav-item">
+        <a href="/about-enisa/data-protection/data-protection" class="nav-link dropdown-toggle" data-drupal-link-system-path="node/17346">Data Protection</a>
+              </li>
+                <li class="nav-item">
+        <a href="/about-enisa/transparency" class="nav-link dropdown-toggle" data-drupal-link-system-path="node/17404">Transparency</a>
+              </li>
+                <li class="nav-item">
+        <a href="/enisa-a-climate-neutral-agency" class="nav-link" data-drupal-link-system-path="node/18893">ENISA, a climate neutral agency </a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</div></div>
+
+</div>
+
+</div>
+<div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="1">
+  <div  class="we-mega-menu-col span12 transversal-menu" data-element-type="we-mega-menu-col" data-width="12" data-block="enisaweb_transversaloptionsofaboutmenu" data-blocktitle="0" data-hidewhencollapse="" data-class="transversal-menu">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-transversaloptionsofaboutmenu" class="block block-system block-system-menu-blocktransversal-options-about-menu">
+  
+    
+      
+              <ul data-block="nav_main" class="nav navbar-nav">
+                    <li class="nav-item">
+        <a href="/topics/state-of-cybersecurity-in-the-eu/cybersecurity-policies/policy-observatory" class="nav-link" data-drupal-link-system-path="node/17484">Policy observatory</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+</div></div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+</li><li class="we-mega-menu-li dropdown-menu" title="" data-level="0"  data-element-type=""  data-id="44fbec5d-1aaf-4cb3-b06b-a79b571ad50c" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-caption=""  data-alignsub="" data-target="" data-icon=""  >
+          <span class="we-megamenu-nolink">
+      Working with us</span>
+        <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px">
+  <div class="we-mega-menu-submenu-inner">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="1">
+  <div  class="we-mega-menu-col span4" data-element-type="we-mega-menu-col" data-width="4" data-block="enisaweb_workwithenisa" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-workwithenisa" class="block block-block-content block-block-content86d5ce2f-abc2-4160-afda-442fe2c68258">
+  
+      <p class="title"><a href="/working-with-us/working-for-enisa" target="_self" title="Access  to Working for ENISA page">Working for ENISA</a></p>
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Explore the benefits of working for ENISA</p><p><a class="button" href="/working-with-us/working-for-enisa" data-entity-type="node" data-entity-uuid="f10da531-46ad-49f6-84cb-0770c69d839e" data-entity-substitution="canonical" title="Work with ENISA page">Access</a></p></div>
+      
+  </div>
+</div></div>
+
+</div>
+<div  class="we-mega-menu-col span8" data-element-type="we-mega-menu-col" data-width="8" data-block="enisaweb_workingwithus" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div id="block-enisaweb-workingwithus" class="title block block-system block-system-menu-blockworking-with-us">
+  
+      <p class="title"><a href="/work-with-us" target="_self" title="Access  to Working with us page">Working with us</a></p>
+    
+      
+              <ul data-block="nav_main" class="nav navbar-nav">
+                    <li class="nav-item">
+        <a href="/careers" class="nav-link" data-drupal-link-system-path="node/12487">Careers</a>
+              </li>
+                <li class="nav-item">
+        <a href="/working-with-us/procurement" class="nav-link" data-drupal-link-system-path="node/17421">Procurement</a>
+              </li>
+                <li class="nav-item">
+        <a href="/working-with-us/ad-hoc-working-groups-calls" class="nav-link" data-drupal-link-system-path="node/17422">Ad hoc working groups</a>
+              </li>
+        </ul>
+  
+
+
+  </div></div></div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+</li>
+</ul>
+	  </div>
+	</nav>
+</div>
+  </div>
+
+  </div>
+
+          <p class="btn-search">
+            <a href="javascript:" title="Show the search field">Search</a>
+          </p>
+          <div class="search-form-wrapper"  aria-label="Search field">
+              <div class="region region-nav-additional">
+    <div id="block-enisaweb-search" class="block block-block-content block-block-content8aa16f51-855f-41da-a3e7-a38e954a15b6">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="search-block-form contextual-region block block-search container-inline" data-drupal-selector="search-block-form" id="block-enisaweb-search-form" role="search"><div class="contextual" data-contextual-id="block:block=enisaweb_search:langcode=en" data-contextual-token="S6pjfYIf4E7lYSnOGjvBizH9RyjrxyfFPxclLSTGUQE" data-drupal-ajax-container data-once="contextual-render"><p><button class="trigger focusable visually-hidden" type="button" aria-pressed="false">Open  configuration options</button></p><ul class="contextual-links" hidden><li><a href="/web/admin/structure/block/manage/enisaweb_search?destination=/web/node">Configure block</a></li><li><a href="/web/admin/structure/block/manage/enisaweb_search/delete?destination=/web/node">Remove block</a></li></ul></div><form data-block="nav_additional" action="/search" method="get" id="search-block-form" accept-charset="UTF-8"><div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label"><label class="visually-hidden" for="edit-keys">Search</label> <input class="form-search form-control" title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value size="15" maxlength="128"></div><div class="form-actions js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" id="edit-actions-search"><button class="button js-form-submit form-submit btn-enisa btn-primary" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search">Search</button></div></form></div></div>
+      
+  </div>
+
+  </div>
+
+            <p class="btn-close-search"><a href="javascript:" title="Hide the search field">Close</a></p>
+          </div>
+        </nav>
+          </div>
+  </div>
+  </header>
+
+<main role="main" class="container-full image-banner">
+  <section class="title-breadcrumbs container">
+      <div id="block-enisaweb-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+<h1><span class="field field--name-title field--type-string field--label-hidden">ENISA Threat Landscape 2025</span>
+</h1>
+
+
+  </div>
+
+                <div class="region region-breadcrumb">
+    <div id="block-enisaweb-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+      
+  <nav aria-label="breadcrumb">
+    <p id="system-breadcrumb" class="visually-hidden">Breadcrumb</p>
+    <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+                  <a href="/" aria-label="Access to ">Home</a>
+              </li>
+          <li class="breadcrumb-item">
+                  <a href="/publications" aria-label="Access to ">Publications</a>
+              </li>
+          <li class="breadcrumb-item">
+                  ENISA Threat Landscape 2025
+              </li>
+        </ol>
+  </nav>
+
+  </div>
+
+  </div>
+
+        </section>
+  <div class="main container">
+    <a id="main-content" tabindex="-1"></a>
+    
+    
+    
+    <div class="container">
+      
+      
+      <div class="row g-0 publications-node-section">
+        <div id="block-enisaweb-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article data-history-node-id="19313" class="node publication-content-wrapper node--type-publications node--view-mode-full">
+  
+    
+
+  
+    <p class="btn-back"><a href="https://www.enisa.europa.eu/publications">Back to all publications</a></p>
+    <div class="row"  class="node__content">
+      <div class="publication-image col-xs-12 col-md-6 col-lg-3">
+                         
+
+                  <a href="/sites/default/files/2025-12/ENISA%20Threat%20Landscape%202025_v1.1.pdf" target="_blank" >
+          <img src="/sites/default/files/2025-10/Screenshot%202025-10-01%20100006.png" alt="ENISA Threat Lansdscape 2025 cover" >
+          </a>  
+          
+        
+              
+        <p class="btn-download-file"><a href="/sites/default/files/2025-12/ENISA%20Threat%20Landscape%202025_v1.1.pdf" target="_blank" >Download</a></p>
+              </div>
+
+      <div class="publication-content col-xs-12 col-md-12  col-lg-6">
+                  <p class="publish-date"><span class="label-detail">Publication date:</span><span class="date">October 1, 2025</span></p>
+          
+            <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item"><p>Through a more threat-centric approach and further contextual analysis, this latest edition of the ENISA Threat Landscape analyses 4875 incidents over a period spanning from 1 July 2024 to 30 June 2025. At its core, this report provides an overview of the most prominent cybersecurity threats and trends the EU faces in the current cyber threat ecosystem.</p><p><strong data-start="63" data-end="116">Revision Notice – Version 1.1 (19 December 2025):</strong><br>This publication has been updated to edit some links.</p></div>
+      
+          
+
+
+           
+                      <div class="additional-materials">
+              <h2>Additional materials</h2>
+              <ul class="additional-files">
+                               
+                 
+                 
+                                  <li class="pdf">
+                    <a href="/sites/default/files/2025-10/ENISA%20Threat%20Landscape%202025%20Booklet.pdf" target="_blank"><span>ENISA Threat Landscape 2025 Booklet.pdf (application/pdf)</span></a>
+                  </li>
+                                            </ul>
+              
+                          </div>
+          
+           
+          
+          <div class="shareLinks">
+            <div id="block-enisaweb-addtoanysharebuttons" class="block block-addtoany block-addtoany-block">
+  
+    
+      <span class="a2a_kit a2a_kit_size_24 addtoany_list" data-a2a-url="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2025" data-a2a-title="ENISA Threat Landscape 2025"><span>Share this page</span><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a><a class="a2a_button_linkedin"></a></span>
+
+  </div>
+
+          </div>
+      </div>
+
+      <div class="publication-metadata col-xs-12 col-md-6  col-lg-3">
+        <h2 class="publication-detail">Publication details</h2>
+        <ul class="publication-metadata-detail">
+                    
+           
+                      <li><span class="label-detail">Content written for</span>
+                              <span class="text">
+                  <a href="https://www.enisa.europa.eu/audience/national-eu-authorities">National / EU authorities</a>
+                </span>                
+                              <span class="text">
+                  <a href="https://www.enisa.europa.eu/audience/private-sector">Private Sector</a>
+                </span>                
+                          </li>
+          
+                      <li><span class="label-detail">Publication type</span><span class="text">ENISA Reports</span></li>
+                        
+                      <li class="related-topics">
+              <span class="label-detail">Topics</span>
+              <ul>                
+                                  <li>
+                    <a href="/topics/cyber-threats">
+                    Cyber Threats
+                    </a>
+                  </li>
+                              </ul>
+            </li>
+          
+
+                                                                                                                                
+                                    
+                      <li class="lang">
+              <span class="label-detail">Language</span>
+                  
+                <span class="text"><a href="/sites/default/files/2025-12/ENISA%20Threat%20Landscape%202025_v1.1.pdf" target="_blank" >EN</a></span>
+                          </li>
+          
+
+                            </ul>          
+      </div>
+    </div>
+</article>
+
+  </div>
+
+
+                                                          <div class="related-content-section">
+            <div class="container">
+              <div id="block-enisaweb-blocktabsrelatedcontent" class="block block-blocktabs block-blocktabs-blockrelated-content">
+  
+      <h2>Related content</h2>
+    
+      
+
+<div id="blocktabs-related_content" class="blocktabs click default" >
+	<ul>
+		<li><a href="#blocktabs-related_content-1">Publications</a></li>
+		<li><a href="#blocktabs-related_content-2">Events</a></li>
+		<li><a href="#blocktabs-related_content-3">News</a></li>
+		</ul>
+
+		<div id="blocktabs-related_content-1"><div class="views-element-container"><div class="publications-list grid2x view view-related-content view-id-related_content view-display-id-block_1 js-view-dom-id-2e518b9ec2f3eb36fd562b25776ebb750b33d9865f81e700cd00f622b1f3efad">
+  
+    
+      
+      <div class="view-content">
+          <div class="publications-item"><div class="publication-image"><a href='/publications/enisa-sectorial-threat-landscape-public-administration' title='Access to ENISA Sectorial Threat Landscape - Public Administration'>  <img loading="lazy" src="/sites/default/files/styles/thumbail_publications_list_98_147/public/2025-11/Screenshot%202025-11-06%20120944.png?itok=mbgEtTm6" width="98" height="147" alt="ENISA Sectorial Threat Landscape - Public Administrion report cover" class="img-fluid image-style-thumbail-publications-list-98-147" />
+
+
+</a></div>
+<div class="publication-content">
+	<h3><a href='/publications/enisa-sectorial-threat-landscape-public-administration' title='Access to the content '>ENISA Sectorial Threat Landscape - Public Administration</a></h3>
+	<p class="metadata">
+		<span class="date"><time datetime="2025-11-06T12:01:17+01:00" title="Thursday, November 6, 2025 - 12:01" class="datetime">November 06, 2025</time>
+</span>
+	</p>
+	<div class="content"><p>This ENISA sectorial threat landscape report provides an overview of the cyber threats faced by the public administration sector in the EU in 2024.</p></div>
+	<div class="related-topics">
+		
+	</div>
+</div></div>
+    <div class="publications-item"><div class="publication-image"><a href='/publications/enisa-cybersecurity-threat-landscape-methodology' title='Access to ENISA Cybersecurity Threat Landscape Methodology'>  <img loading="lazy" src="/sites/default/files/styles/thumbail_publications_list_98_147/public/2025-08/ETL%20cover.png?itok=Rn4bS2yY" width="98" height="147" alt="ENISA Cybersecurity Threat Landscape Methodology cover with report title published in August 2025" class="img-fluid image-style-thumbail-publications-list-98-147" />
+
+
+</a></div>
+<div class="publication-content">
+	<h3><a href='/publications/enisa-cybersecurity-threat-landscape-methodology' title='Access to the content '>ENISA Cybersecurity Threat Landscape Methodology</a></h3>
+	<p class="metadata">
+		<span class="date"><time datetime="2025-08-01T14:40:11+02:00" title="Friday, August 1, 2025 - 14:40" class="datetime">August 01, 2025</time>
+</span>
+	</p>
+	<div class="content"><p>This publication outlines the updated ENISA Cybersecurity Threat Landscape (CTL) methodology, building on the 2021 Threat Landscape Report and the 2022 methodology.</p></div>
+	<div class="related-topics">
+		
+	</div>
+</div></div>
+    <div class="publications-item"><div class="publication-image"><a href='/publications/enisa-space-threat-landscape-2025' title='Access to ENISA Space Threat Landscape 2025'>  <img loading="lazy" src="/sites/default/files/styles/thumbail_publications_list_98_147/public/2025-03/Screenshot%202025-03-26%20095907.png?itok=OtoVe3am" width="98" height="147" alt="Space Threat Landscape cover" class="img-fluid image-style-thumbail-publications-list-98-147" />
+
+
+</a></div>
+<div class="publication-content">
+	<h3><a href='/publications/enisa-space-threat-landscape-2025' title='Access to the content '>ENISA Space Threat Landscape 2025</a></h3>
+	<p class="metadata">
+		<span class="date"><time datetime="2025-03-26T09:00:53+01:00" title="Wednesday, March 26, 2025 - 09:00" class="datetime">March 26, 2025</time>
+</span>
+	</p>
+	<div class="content"><p>The primary objective of this report is to identify and assess the cybersecurity threat landscape for commercial satellites – exploring both existing and emerging challenges for the industry.</p></div>
+	<div class="related-topics">
+		
+	</div>
+</div></div>
+    <div class="publications-item"><div class="publication-image"><a href='/publications/enisa-threat-landscape-finance-sector' title='Access to ENISA Threat Landscape: Finance Sector'>  <img loading="lazy" src="/sites/default/files/styles/thumbail_publications_list_98_147/public/2025-02/Screenshot%202025-02-21%20155843.png?itok=aqYtY9on" width="98" height="147" alt="ENISA Threat Landscape - Finance Sector Publication Cover" class="img-fluid image-style-thumbail-publications-list-98-147" />
+
+
+</a></div>
+<div class="publication-content">
+	<h3><a href='/publications/enisa-threat-landscape-finance-sector' title='Access to the content '>ENISA Threat Landscape: Finance Sector</a></h3>
+	<p class="metadata">
+		<span class="date"><time datetime="2025-02-21T15:13:48+01:00" title="Friday, February 21, 2025 - 15:13" class="datetime">February 21, 2025</time>
+</span>
+	</p>
+	<div class="content"><p>This is the first analysis conducted by the European Union Agency for Cybersecurity (ENISA) of the cyber threat landscape of the European finance sector.</p></div>
+	<div class="related-topics">
+		
+	</div>
+</div></div>
+
+    </div>
+  
+            <div class="view-footer">
+      <p><a href="/publications?f[0]=topics%3A526#contentList" class="btn-all">BROWSE ALL PUBLICATIONS</a></p>
+    </div>
+  </div>
+</div>
+</div>
+		<div id="blocktabs-related_content-2"><div class="views-element-container"><div class="events-for view view-related-content view-id-related_content view-display-id-block_2 js-view-dom-id-ac2a448899f7ceb5ce4b9d8ab8edb1ead04ddcd90c8cbe743c40c0fd122516b2">
+  
+    
+      
+      <div class="view-content">
+          <div class="item-events-for"><div class="card-event">
+	<h3 class="event-title"><a href="/events/2022-cti-eu-conference" hreflang="en">2022 CTI- EU Conference</a></h3>
+	<p class="event-date">
+		<span class="year">2022</span>
+		<span class="month">Dec 7</span>
+	</p>
+</div></div>
+    <div class="item-events-for"><div class="card-event">
+	<h3 class="event-title"><a href="/events/2023-cti-eu-conference/2023-cti-eu-conference" hreflang="en">2023 CTI- EU Conference powered by ENISA</a></h3>
+	<p class="event-date">
+		<span class="year">2023</span>
+		<span class="month">Sep 13</span>
+	</p>
+</div></div>
+    <div class="item-events-for"><div class="card-event">
+	<h3 class="event-title"><a href="/events/threathunt-2030" hreflang="en">Threathunt 2030</a></h3>
+	<p class="event-date">
+		<span class="year">2023</span>
+		<span class="month">Sep 14</span>
+	</p>
+</div></div>
+    <div class="item-events-for"><div class="card-event">
+	<h3 class="event-title"><a href="/events/cti-conference" hreflang="en">2024 ENISA CTI Conference</a></h3>
+	<p class="event-date">
+		<span class="year">2024</span>
+		<span class="month">Oct 1</span>
+	</p>
+</div></div>
+
+    </div>
+  
+            <div class="view-footer">
+      <p><a href="/events?f[0]=topics%3A526#contentList" class="btn-all">BROWSE ALL EVENTS</a></p>
+    </div>
+  </div>
+</div>
+</div>
+		<div id="blocktabs-related_content-3"><div class="views-element-container"><div class="enisa-cards-wrapper tabs col2x view view-related-content view-id-related_content view-display-id-block_3 js-view-dom-id-d801496b550c5d9d92ade9731f1a0a8f64e12d343040c3b2c7c99b7ad1696724">
+  
+    
+      
+      <div class="view-content">
+          <div class="enisa-card"><h3><a href="/news/public-administration-increasingly-targeted-by-ddos-attacks" hreflang="en">Public administration increasingly targeted by DDoS attacks</a></h3>
+<p class="metadata">
+	<span>Press Release</span>
+	<span class="date"><time datetime="2025-11-06T12:01:10+01:00" title="Thursday, November 6, 2025 - 12:01" class="datetime">November 06, 2025</time>
+</span>
+</p>
+<div class="related-topics">
+	
+</div>
+<div class="content">
+	<p>The new report by ENISA highlights how EU public administrations are increasingly targeted by hacktivists, primarily resorting to DDoS attacks.&nbsp;</p>
+</div></div>
+    <div class="enisa-card"><h3><a href="/news/etl-2025-eu-consistently-targeted-by-diverse-yet-convergent-threat-groups" hreflang="en">EU consistently targeted by diverse yet convergent threat groups</a></h3>
+<p class="metadata">
+	<span>Press Release</span>
+	<span class="date"><time datetime="2025-10-01T09:03:51+02:00" title="Wednesday, October 1, 2025 - 09:03" class="datetime">October 01, 2025</time>
+</span>
+</p>
+<div class="related-topics">
+	
+</div>
+<div class="content">
+	<p>The 2025 ENISA Threat Landscape shows that threat groups are reusing tools and techniques, introducing new attack models, exploiting vulnerabilities and collaborating to target the security and resilience of the EU’s digital infrastructure.</p>
+</div></div>
+    <div class="enisa-card"><h3><a href="/news/from-cyber-to-outer-space-a-guide-to-securing-commercial-satellite-operations" hreflang="en">From Cyber to Outer Space: A Guide to Securing Commercial Satellite Operations</a></h3>
+<p class="metadata">
+	<span>Press Release</span>
+	<span class="date"><time datetime="2025-03-26T09:01:55+01:00" title="Wednesday, March 26, 2025 - 09:01" class="datetime">March 26, 2025</time>
+</span>
+</p>
+<div class="related-topics">
+	
+</div>
+<div class="content">
+	<p>The European Union Agency for Cybersecurity (ENISA) explores the cybersecurity threat landscape of space to strengthen the resilience of commercial satellites.</p>
+</div></div>
+    <div class="enisa-card"><h3><a href="/news/reporting-on-threathunt-2030-navigating-the-future-of-the-cybersecurity-threat-landscape" hreflang="en">Reporting on Threathunt 2030: Navigating the future of the cybersecurity threat landscape</a></h3>
+<p class="metadata">
+	<span>Press Release</span>
+	<span class="date"><time datetime="2024-09-19T19:32:00+02:00" title="Thursday, September 19, 2024 - 19:32" class="datetime">September 19, 2024</time>
+</span>
+</p>
+<div class="related-topics">
+	
+</div>
+<div class="content">
+	<p>The European Union Agency for Cybersecurity (ENISA) organised the 2024 edition of the ‘Threathunt 2030’ in Athens, the flagship conference on cybersecurity threats foresight.</p>
+</div></div>
+
+    </div>
+  
+            <div class="view-footer">
+      <p><a href="/news?f[0]=topics%3A526#contentList" class="btn-all">BROWSE ALL NEWS</a></p>
+    </div>
+  </div>
+</div>
+</div>
+	
+</div>
+
+
+  </div>
+
+            </div>
+          </div>
+              </div>
+    </div>
+  </div>
+</main>
+
+      <section class="subscribe-section" role="complementary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 subscribe-image"></div>
+          <div class="col-md-9 col-lg-9 subscribe-wrapper">
+            <h2>Subscribe</h2>
+            <p><strong>Stay updated with ENISA!</strong> Sign up for email alerts on publications, events, vacancies,
+              and more.</p>
+            <p><a href="/alertservice" class="btn-all left">Sign up now</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <footer class="mt-auto enisa-footer">
+    <div class="container">
+            <div class="footer container">
+        <div class="row">
+          <div class="col-md-12 col-lg-3">
+            <div id="block-enisaweb-enisalogos" class="block block-block-content block-block-content2195446e-db39-496e-a33e-1eefa17fd80e">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="enisa-logo"><img src="/themes/custom/enisaweb/images/enisa-logo-white.svg" alt="ENISA, European Union Agency for Cybersecurity" width="220" height="150" fetchpriority="high" class="align-left" loading="lazy"><p><em>A Trusted and Cyber Secure Europe</em></p></div><div class="agencies-network-logo"><img src="/themes/custom/enisaweb/images/agencies-network.png" alt="Agencies network logo" width="39" height="36" fetchpriority="high" class="align-left" loading="lazy"><p><a href="https://agencies-network.europa.eu/index_en" target="_blank">EU Agencies Network</a></p></div></div>
+      
+  </div>
+
+            <div id="block-enisaweb-socialmedialinks" class="block-social-media-links block block-social-media-links-block">
+  
+      <p>Follow us on</p>
+    
+      
+
+<ul class="social-media-links--platforms platforms vertical">
+      <li>
+      <a class="social-media-link-icon--youtube" href="https://www.youtube.com/user/ENISAvideos"  target="_blank" >
+        <span class='fab fa-youtube fa-2x'></span> 
+                            <span class="platform-name">Youtube</span>
+              </a>
+    </li>
+      <li>
+      <a class="social-media-link-icon--twitter" href="https://x.com/enisa_eu"  target="_blank" >
+        <span class='fab fa-x-twitter fa-2x'></span> 
+                            <span class="platform-name">X</span>
+              </a>
+    </li>
+      <li>
+      <a class="social-media-link-icon--linkedin" href="https://www.linkedin.com/company/european-union-agency-for-cybersecurity-enisa/"  target="_blank" >
+        <span class='fab fa-linkedin fa-2x'></span> 
+                            <span class="platform-name">LinkedIn</span>
+              </a>
+    </li>
+      <li>
+      <a class="social-media-link-icon--facebook" href="https://www.facebook.com/ENISAEUAGENCY"  target="_blank" >
+        <span class='fab fa-facebook fa-2x'></span> 
+                            <span class="platform-name">Facebook</span>
+              </a>
+    </li>
+  </ul>
+
+  </div>
+                      </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 border-left">
+          <nav aria-labelledby="block-enisaweb-contactus-menu" id="block-enisaweb-contactus" class="block block-menu navigation menu--contact-us">
+      
+  <p  id="block-enisaweb-contactus-menu">Contact us</p>
+  
+
+        
+              <ul data-block="footer" class="nav navbar-nav">
+                    <li class="nav-item">
+        <a href="/about-enisa/contact/contact" class="nav-link" data-drupal-link-system-path="node/17344">Contacts</a>
+              </li>
+                <li class="nav-item">
+        <a href="/form/contact-form" class="nav-link" data-drupal-link-system-path="webform/contact_form">General queries</a>
+              </li>
+                <li class="nav-item">
+        <a href="/working-with-us/procurement" class="nav-link" data-drupal-link-system-path="node/17421">Public Procurement</a>
+              </li>
+                <li class="nav-item">
+        <a href="/form/media-inquiries" class="nav-link" data-drupal-link-system-path="webform/media_inquiries">Media inquiries</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+          
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 border-left">
+            <div id="block-enisaweb-findoutaboutus" class="block block-system block-system-menu-blockfind-out-about-us">
+  
+      <p>Find out about us</p>
+    
+      
+              <ul data-block="footer" class="nav navbar-nav">
+                    <li class="nav-item">
+        <a href="/accessibility-statement" class="nav-link" data-drupal-link-system-path="node/18887">Accessibility</a>
+              </li>
+                <li class="nav-item">
+        <a href="/about-enisa/legal-notice" class="nav-link" data-drupal-link-system-path="node/17355">Legal Notice</a>
+              </li>
+                <li class="nav-item">
+        <a href="/about-enisa/data-protection/data-protection" class="nav-link" data-drupal-link-system-path="node/17346">Data Protection</a>
+              </li>
+                <li class="nav-item">
+        <a href="/about-enisa/cookies" class="nav-link" data-drupal-link-system-path="node/17345">Cookies</a>
+              </li>
+                <li class="nav-item">
+        <a href="/sitemap" target="_blank" class="nav-link" data-drupal-link-system-path="sitemap">Sitemap</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 border-left">
+            <div id="block-enisaweb-pageofinterest" class="block block-system block-system-menu-blockpage-of-interest">
+  
+      <p>Page of interest</p>
+    
+      
+              <ul data-block="footer" class="nav navbar-nav">
+                    <li class="nav-item">
+        <a href="/publications" class="nav-link" data-drupal-link-system-path="publications">Publications </a>
+              </li>
+                <li class="nav-item">
+        <a href="/press-office" class="nav-link" data-drupal-link-system-path="node/11033">Press Office</a>
+              </li>
+                <li class="nav-item">
+        <a href="/digital-tools" class="nav-link" data-drupal-link-system-path="digital-tools">Digital Tools</a>
+              </li>
+                <li class="nav-item">
+        <a href="/work-with-us" class="nav-link" data-drupal-link-system-path="node/11443">Working with us</a>
+              </li>
+                <li class="nav-item">
+        <a href="/about-enisa/public-access-to-documents" class="nav-link" data-drupal-link-system-path="node/17363">Public access to documents</a>
+              </li>
+        </ul>
+  
+
+
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="copy container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-6 alignleft">
+              <div id="block-enisaweb-copyrightfooter" class="block block-block-content block-block-content0f0b270e-cc5d-448c-a771-6cc7c0621340">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>©&nbsp;<script>document.write(/\d{4}/.exec(Date())[0])</script> by the European Union Agency for Cybersecurity</p></div>
+      
+  </div>
+
+          </div>
+          <div class="col-xs-12 col-md-12 col-lg-6 alignright">
+              <div id="block-enisaweb-enisadescriptionfooter" class="block block-block-content block-block-content2b4d8729-4032-4438-ba87-1a58fbc364db">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>ENISA is an agency of the European Union</p></div>
+      
+  </div>
+
+          </div>
+        </div>
+    </div>
+    <p><a href="#" id="totop" class="totop"><span class="sr-only">Go to top</span></a></p>
+  </footer>
+
+
+
+
+  </div>
+
+    <script type="application/json">{"utility":"piwik","siteID":"5847bf6f-3ce3-4800-8749-1c565b34b7b6","sitePath":["www.enisa.europa.eu"],"instance":"ec"}</script>
+<script type="application/json">{"utility":"cck","url":"\/about-enisa\/cookies"}</script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/19313","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxtkWtywyAMhC_EY6YzPY9HBsXGBuQiEdc5fXHTxGndP8zqE4hlAe-FIG8WfoS5FMqi-khuFujZPpVyM_ogVDpwjooPlO1T3Y9h9qoBtJlKghhuqDAHhhV72wO_VkTCUmB51xPrCIIsR3eI1EPULFsMeTj49FGxbNptLuKJjnTFEnYTcurVoIWqG_VSsxv_ts0C9dXcxJTfjjIhMwzIB8nkURF2TQtRZOtLXSCaR605QZFI4LEoJhcgdqmFB117z8z20rJqg5gSGkdpobyb_mfjGRkZMaHijQXTPdRrwJXt92pggs9fIJGvLawV25ABEubabi-pWdU70DvRj8_7AhgNzP0","theme":"enisaweb","theme_token":null},"ajaxTrustedUrl":[],"ckeditorAccordion":{"accordionStyle":{"collapseAll":1,"keepRowsOpen":0,"animateAccordionOpenAndClose":1,"openTabsWithHash":0,"allowHtmlInTitles":1}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:2e518b9ec2f3eb36fd562b25776ebb750b33d9865f81e700cd00f622b1f3efad":{"view_name":"related_content","view_display_id":"block_1","view_args":"526\/19313","view_path":"\/node\/19313","view_base_path":null,"view_dom_id":"2e518b9ec2f3eb36fd562b25776ebb750b33d9865f81e700cd00f622b1f3efad","pager_element":0}}},"csp":{"nonce":"4CuwxHJ3Xg_4oh5D-WKaMQ"},"user":{"uid":0,"permissionsHash":"c959f9e58966812fadfc3cc0173064ba7a7241a3d6883e84d83cec7c06d22c79"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.7.1"></script>
+<script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=10.5.8"></script>
+<script src="/core/misc/drupal.js?v=10.5.8"></script>
+<script src="/core/misc/drupal.init.js?v=10.5.8"></script>
+<script src="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/ui/version-min.js?v=1.13.2"></script>
+<script src="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/ui/keycode-min.js?v=1.13.2"></script>
+<script src="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/ui/safe-active-element-min.js?v=1.13.2"></script>
+<script src="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/ui/unique-id-min.js?v=1.13.2"></script>
+<script src="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/ui/widget-min.js?v=1.13.2"></script>
+<script src="/modules/contrib/jquery_ui/assets/vendor/jquery.ui/ui/widgets/tabs-min.js?v=1.13.2"></script>
+<script src="/core/assets/vendor/tabbable/index.umd.min.js?v=6.2.0"></script>
+<script src="https://static.addtoany.com/menu/page.js" defer></script>
+<script src="/modules/contrib/addtoany/js/addtoany.js?v=10.5.8"></script>
+<script src="/modules/contrib/blocktabs/js/blocktabs.js?v=10.5.8"></script>
+<script src="/modules/contrib/ckeditor_accordion/js/accordion.frontend.min.js?t7gvm4"></script>
+<script src="/themes/custom/enisaweb/js/enisaweb.js?t7gvm4"></script>
+<script src="/themes/custom/enisaweb/js/nis2-directive.js?t7gvm4"></script>
+<script src="/libraries/jquery-cycle-custom/jquery.cycle.all.js?t7gvm4"></script>
+<script src="/libraries/jquery-ui-touch-punch-custom/jquery.ui.touch-punch.min.js?t7gvm4"></script>
+<script src="/libraries/json2-custom/json2.js?t7gvm4"></script>
+<script src="https://webtools.europa.eu/load.js" defer></script>
+<script src="/core/misc/jquery.form.js?v=4.3.0"></script>
+<script src="/core/misc/progress.js?v=10.5.8"></script>
+<script src="/core/assets/vendor/loadjs/loadjs.min.js?v=4.3.0"></script>
+<script src="/core/misc/debounce.js?v=10.5.8"></script>
+<script src="/core/misc/announce.js?v=10.5.8"></script>
+<script src="/core/misc/message.js?v=10.5.8"></script>
+<script src="/core/misc/ajax.js?v=10.5.8"></script>
+<script src="/core/modules/views/js/base.js?v=10.5.8"></script>
+<script src="/core/modules/views/js/ajax_view.js?v=10.5.8"></script>
+<script src="/modules/contrib/we_megamenu/assets/js/we_mobile_menu.js?v=1"></script>
+<script src="/modules/contrib/we_megamenu/assets/js/we_megamenu_frontend.js?v=1"></script>
+
+    <script async="" src="/themes/custom/enisaweb/js/application.js"></script>
+  </body>
+</html>

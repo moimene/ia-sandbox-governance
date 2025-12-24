@@ -1,0 +1,176 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Assessment Output Claims",
+    "description": "Schema for assessment output with claims and citations (AL-SDLC v1.2)",
+    "type": "object",
+    "required": [
+        "status",
+        "metadata"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "status": {
+            "type": "string",
+            "enum": [
+                "success",
+                "insufficient_evidence",
+                "error"
+            ],
+            "description": "Result status of the assessment"
+        },
+        "metadata": {
+            "type": "object",
+            "required": [
+                "timestamp",
+                "application_id"
+            ],
+            "properties": {
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "application_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "model_version": {
+                    "type": "string",
+                    "description": "Version of the assessment model used"
+                }
+            }
+        },
+        "assessment": {
+            "type": "object",
+            "required": [
+                "measure_id",
+                "maturity",
+                "adaptation_plan"
+            ],
+            "properties": {
+                "measure_id": {
+                    "type": "string",
+                    "description": "ID of the measure being assessed"
+                },
+                "maturity": {
+                    "type": "string",
+                    "enum": [
+                        "L1",
+                        "L2",
+                        "L3",
+                        "L4",
+                        "L5",
+                        "L6",
+                        "L7",
+                        "L8"
+                    ],
+                    "description": "Maturity level assigned"
+                },
+                "difficulty": {
+                    "type": "string",
+                    "enum": [
+                        "00",
+                        "01",
+                        "02"
+                    ],
+                    "description": "Difficulty level"
+                },
+                "adaptation_plan": {
+                    "type": "object",
+                    "required": [
+                        "code",
+                        "description"
+                    ],
+                    "properties": {
+                        "code": {
+                            "type": "string",
+                            "enum": [
+                                "01",
+                                "02",
+                                "03",
+                                "04",
+                                "05"
+                            ]
+                        },
+                        "description": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "diagnosis_status": {
+                    "type": "string",
+                    "enum": [
+                        "00",
+                        "01"
+                    ],
+                    "description": "00 = Pending, 01 = Diagnosed"
+                }
+            }
+        },
+        "claims": {
+            "type": "array",
+            "description": "List of claims with evidence",
+            "items": {
+                "type": "object",
+                "required": [
+                    "claim_text"
+                ],
+                "properties": {
+                    "claim_text": {
+                        "type": "string"
+                    },
+                    "confidence_score": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                    },
+                    "citations": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "doc_id": {
+                                    "type": "string"
+                                },
+                                "page_number": {
+                                    "type": [
+                                        "integer",
+                                        "string"
+                                    ]
+                                },
+                                "anchor_ref": {
+                                    "type": "string"
+                                },
+                                "snippet_quote": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "error": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "if": {
+        "properties": {
+            "status": {
+                "const": "success"
+            }
+        }
+    },
+    "then": {
+        "required": [
+            "assessment"
+        ]
+    }
+}

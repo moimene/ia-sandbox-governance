@@ -1,0 +1,43 @@
+usecase_id: ia_sandbox_preevaluacion
+title: "Sistema de Preevaluación Sandbox IA España"
+owner_practice: "Innovación/LegalTech"
+service_line: "Regulatory/Compliance"
+
+risk_class: low  # POC demostradora
+data_classes: [demo_data]
+
+client_constraints:
+  ocg_reference: "N/A"
+  client_ai_ban: false
+  data_sovereignty: EU
+  allowed_llm_providers: ["openai"]  # Via n8n
+  prohibited_tools: []
+  retention_days_max: 365
+
+controls:
+  human_in_the_loop: optional
+  four_eyes_review: false
+  citation_required: false  # POC mode
+  redaction_required: false
+  logging_level: minimal
+  audit_level: minimal
+
+artifacts:
+  domain_model: spec/domain_model.md
+  database_schema: spec/database_schema.md
+  workflow_states: spec/workflow_states.md
+  agent_contracts_dir: spec/agent_contracts/
+
+evals:
+  dataset: evals/datasets/golden_set_v0.jsonl
+  pass_thresholds:
+    schema_valid: true
+    citation_coverage_min: 0.80
+    citation_match_min: 0.80
+    false_red_rate_max: 0.10
+
+runtime:
+  orchestration: n8n
+  backend: supabase
+  frontend: nextjs
+  environments: [dev, staging]

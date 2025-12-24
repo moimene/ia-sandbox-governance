@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Application Input",
+    "description": "Schema for creating/updating an application in IA_Sandbox",
+    "type": "object",
+    "required": [
+        "project_metadata"
+    ],
+    "properties": {
+        "project_metadata": {
+            "type": "object",
+            "required": [
+                "nombre",
+                "sector"
+            ],
+            "properties": {
+                "nombre": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 200,
+                    "description": "Nombre del proyecto de IA"
+                },
+                "trl": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9,
+                    "description": "Technology Readiness Level (1-9)"
+                },
+                "sector": {
+                    "type": "string",
+                    "enum": [
+                        "salud",
+                        "finanzas",
+                        "educacion",
+                        "transporte",
+                        "energia",
+                        "administracion_publica",
+                        "justicia",
+                        "empleo",
+                        "otro"
+                    ],
+                    "description": "Sector de aplicación del sistema de IA"
+                },
+                "proveedor": {
+                    "type": "string",
+                    "description": "Nombre del proveedor/desarrollador"
+                },
+                "descripcion": {
+                    "type": "string",
+                    "maxLength": 2000,
+                    "description": "Descripción del sistema de IA"
+                }
+            }
+        },
+        "risk_profile": {
+            "type": "object",
+            "properties": {
+                "nivel": {
+                    "type": "string",
+                    "enum": [
+                        "minimal",
+                        "limited",
+                        "high",
+                        "unacceptable"
+                    ],
+                    "description": "Nivel de riesgo según RIA"
+                },
+                "justificacion": {
+                    "type": "string",
+                    "description": "Justificación del nivel de riesgo"
+                },
+                "citas": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Referencias normativas aplicables"
+                }
+            }
+        }
+    }
+}
