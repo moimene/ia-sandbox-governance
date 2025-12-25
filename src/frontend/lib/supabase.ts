@@ -66,9 +66,30 @@ export interface AssessmentMA {
 export async function createApplication(
     projectMetadata: Application['project_metadata']
 ): Promise<Application | null> {
+    const { data: { user } } = await supabase.auth.getUser()
+
+    if (!user) {
+        console.error('User not authenticated')
+        return null
+    }
+
+    // Get user's organization
+    const { data: orgMember } = await supabase
+        .from('org_members')
+        .select('org_id')
+        .eq('user_id', user.id)
+        .single()
+
+    if (!orgMember) {
+        console.error('User does not belong to any organization')
+        return null
+    }
+
     const { data, error } = await supabase
         .from('applications')
         .insert({
+            user_id: user.id,
+            org_id: orgMember.org_id,
             project_metadata: projectMetadata,
             status: 'DRAFT'
         })
