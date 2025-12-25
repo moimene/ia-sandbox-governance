@@ -134,7 +134,7 @@ export function Tab9AutoevalMA({ additionalMeasures, subparts, assessments, onAs
 
             <div className={styles.infoBox}>
                 <strong>✅ Último paso:</strong> Una vez completadas todas las evaluaciones,
-                haga clic en "Completar" para guardar y volver al resumen del requisito.
+                haga clic en &quot;Completar&quot; para guardar y volver al resumen del requisito.
             </div>
         </div>
     )
