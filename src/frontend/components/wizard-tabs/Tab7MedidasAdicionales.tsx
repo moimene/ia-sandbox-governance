@@ -277,6 +277,32 @@ export function Tab7MedidasAdicionales({
                                     <span className={styles.docPending}>00 - Pendiente</span>
                                 )}
                             </div>
+
+                            {/* SEDIA Evaluation Status (ReadOnly) */}
+                            {ma.sedia_evaluation_status && ma.sedia_evaluation_status !== '00' && (
+                                <div className={styles.sediaStatus} style={{ marginTop: '12px', padding: '8px', background: 'var(--color-bg-subtle)', borderRadius: '4px', borderLeft: '3px solid var(--garrigues-teal)' }}>
+                                    <h5 style={{ margin: '0 0 4px 0', fontSize: '0.85rem', color: 'var(--garrigues-teal)' }}>
+                                        🏛️ Evaluación SEDIA
+                                    </h5>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                        <span className={`badge ${ma.sedia_evaluation_status === '01' ? 'badge-success' : 'badge-error'}`}
+                                            style={{
+                                                padding: '2px 8px',
+                                                borderRadius: '12px',
+                                                fontSize: '0.75rem',
+                                                background: ma.sedia_evaluation_status === '01' ? '#def7ec' : '#fde8e8',
+                                                color: ma.sedia_evaluation_status === '01' ? '#03543f' : '#9b1c1c'
+                                            }}>
+                                            {ma.sedia_evaluation_status === '01' ? 'Aceptada (OK)' : 'Rechazada (NO_OK)'}
+                                        </span>
+                                        {ma.sedia_evaluator_comments && (
+                                            <span style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)' }}>
+                                                - {ma.sedia_evaluator_comments}
+                                            </span>
+                                        )}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

@@ -180,6 +180,6 @@ async def get_maturity_levels():
             {"code": "L5", "label": "Implementada sin evidencia", "plan": "03", "plan_desc": "Adaptación Completa"},
             {"code": "L6", "label": "Implementada, evidencia parcial", "plan": "04", "plan_desc": "Documentar"},
             {"code": "L7", "label": "Implementada, evidencia completa", "plan": "04", "plan_desc": "Documentar"},
-            {"code": "L8", "label": "Cumplimiento total verificado", "plan": "05", "plan_desc": "Ninguna acción"},
+            {"code": "L8", "label": "Medida no necesaria", "plan": "05", "plan_desc": "Ninguna acción"},
         ]
     }

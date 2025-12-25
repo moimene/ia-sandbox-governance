@@ -1,0 +1,58 @@
+version: "1.0"
+source: "AESIA Guía 16 - Manual de Checklists (Dec 2025)"
+catalog_release: "AESIA_G16_2025-12-10"
+
+defaults:
+  sheet_names:
+    article: "Artículo RIA"
+    measures: "Medidas guías (MG)"
+    relation: "Relación MG-Apart."
+
+requirements:
+  - requirement_code: "QUALITY_MGMT"
+    description: "Sistema de gestión de la calidad (Art. 17)"
+    source_xlsx: "1. Sistema de gestión de la calidad_Checklist.xlsx"
+    
+  - requirement_code: "RISK_MGMT"
+    description: "Sistema de gestión de riesgos (Arts. 9)"
+    source_xlsx: "2. Sistema de gestión de riesgos_Checklist.xlsx"
+
+  - requirement_code: "HUMAN_OVERSIGHT"
+    description: "Supervisión humana (Art. 14)"
+    source_xlsx: "3. Supervisión humana_Checklist.xlsx"
+
+  - requirement_code: "DATA_GOVERNANCE"
+    description: "Datos y gobernanza de datos (Art. 10)"
+    source_xlsx: "4. Datos y gobernanza de datos_Checklist.xlsx"
+
+  - requirement_code: "TRANSPARENCY"
+    description: "Transparencia (Art. 13)"
+    source_xlsx: "5. Transparencia_Checklist.xlsx"
+
+  - requirement_code: "ACCURACY"
+    description: "Precisión (Art. 15)"
+    source_xlsx: "6. Precisión_Checklist.xlsx"
+
+  - requirement_code: "ROBUSTNESS"
+    description: "Robustez (Art. 15)"
+    source_xlsx: "7. Solidez_Checklist.xlsx"
+
+  - requirement_code: "CYBERSECURITY"
+    description: "Ciberseguridad (Art. 15)"
+    source_xlsx: "8. Ciberseguridad_Checklist.xlsx"
+
+  - requirement_code: "LOGGING"
+    description: "Registros (Art. 12)"
+    source_xlsx: "9. Registros_Checklist.xlsx"
+
+  - requirement_code: "TECHNICAL_DOC"
+    description: "Documentación técnica (Art. 11)"
+    source_xlsx: "10. Documentación técnica_Checklist.xlsx"
+
+  - requirement_code: "POST_MARKET"
+    description: "Vigilancia poscomercialización (Art. 72)"
+    source_xlsx: "11. Vigilancia poscomercialización_Checklist.xlsx"
+
+  - requirement_code: "INCIDENT_MGMT"
+    description: "Gestión de incidentes graves (Art. 73)"
+    source_xlsx: "12. Gestión de incidentes graves_Checklist.xlsx"

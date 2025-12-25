@@ -73,6 +73,8 @@ export interface AdditionalMeasure {
     description?: string
     file_name?: string
     file_storage_path?: string
+    sedia_evaluation_status?: string
+    sedia_evaluator_comments?: string
 }
 
 export interface MAToSubpart {

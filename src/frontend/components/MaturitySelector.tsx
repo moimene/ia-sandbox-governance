@@ -18,7 +18,7 @@ const MATURITY_LEVELS: MaturityLevel[] = [
     { code: 'L5', label: 'Implementada sin evidencia', planCode: '03', planDesc: 'Adaptación Completa' },
     { code: 'L6', label: 'Implementada, evidencia parcial', planCode: '04', planDesc: 'Documentar' },
     { code: 'L7', label: 'Implementada, evidencia completa', planCode: '04', planDesc: 'Documentar' },
-    { code: 'L8', label: 'Cumplimiento total verificado', planCode: '05', planDesc: 'Ninguna acción' },
+    { code: 'L8', label: 'Medida no necesaria', planCode: '05', planDesc: 'Ninguna acción' },
 ]
 
 interface Props {

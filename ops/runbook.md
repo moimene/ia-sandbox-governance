@@ -5,6 +5,9 @@
 - **Sistema:** Sistema de Preevaluación Sandbox IA España
 - **Stack:** Next.js + FastAPI + Supabase
 - **Propietario:** Equipo de Innovación
+- **Frontend (Prod):** https://ia-sandbox-governance.vercel.app
+- **Backend (Prod):** https://ia-sandbox-governance-production.up.railway.app
+- **Repo:** https://github.com/moimene/ia-sandbox-governance
 
 ---
 
@@ -70,7 +73,7 @@ psql $DATABASE_URL -f evals/smoke_tests/catalog_smoke_tests.sql
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=https://[PROJECT_ID].supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=[PUBLISHABLE_KEY]
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key_here
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
@@ -78,7 +81,7 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 
 ```env
 SUPABASE_URL=https://[PROJECT_ID].supabase.co
-SUPABASE_SERVICE_KEY=[SECRET_KEY]
+SUPABASE_SERVICE_KEY=your_service_role_key_here
 OPENAI_API_KEY=sk-...
 ENVIRONMENT=development
 ```

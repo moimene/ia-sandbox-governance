@@ -68,6 +68,19 @@ export default function RootLayout({
                 <AuthProvider>
                     <Navbar />
                     <main>{children}</main>
+                    <footer style={{
+                        textAlign: 'center',
+                        padding: '1rem',
+                        fontSize: '0.75rem',
+                        color: 'var(--color-text-secondary)',
+                        borderTop: '1px solid var(--color-border)',
+                        marginTop: '2rem'
+                    }}>
+                        <p>
+                            ⚠️ <strong>Aviso Legal:</strong> Esta aplicación es una herramienta de apoyo y <strong>no garantiza conformidad oficial</strong> con el Reglamento de IA ni con los requisitos del Sandbox.
+                            El uso de esta herramienta no sustituye el asesoramiento legal ni la validación por parte de la autoridad competente (SEDIA/AESIA).
+                        </p>
+                    </footer>
                 </AuthProvider>
             </body>
         </html>

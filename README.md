@@ -38,7 +38,7 @@ Sistema de **autodiagnóstico de cumplimiento** para el **Sandbox de Inteligenci
 |----------------|-------------|
 | **12 Requisitos RIA** | Evaluación completa de Arts. 6-25 del Reglamento de IA |
 | **84 Medidas Guía (MG)** | Catálogo oficial AESIA preinformado automáticamente |
-| **8 Niveles de Madurez** | Escala L1-L8 con cálculo automático de plan de adaptación |
+| **8 Niveles de Madurez** | Escala L1-L8 (L8="No necesaria") con cálculo automático |
 | **Medidas Adicionales (MA)** | Medidas personalizadas con relación N:M a subapartados |
 | **Exportación Excel** | Inyección en templates oficiales AESIA (9 pestañas) |
 | **Multi-tenant** | Aislamiento por organización con RLS |
@@ -160,7 +160,7 @@ for f in src/migrations/0*.sql; do psql $DATABASE_URL -f "$f"; done
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=https://rlisgwhdafgnmbauzynr.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_pRh7ZcTrUJOTvpbYehynFg_igrmE4tx
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key_here
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
@@ -168,7 +168,7 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 
 ```env
 SUPABASE_URL=https://rlisgwhdafgnmbauzynr.supabase.co
-SUPABASE_SERVICE_KEY=sb_secret_XeNB-FIVRGb_EOL_Da-Cyg_LRs5RQc5
+SUPABASE_SERVICE_KEY=your_service_role_key_here
 OPENAI_API_KEY=sk-...
 ENVIRONMENT=development
 ```
@@ -425,10 +425,13 @@ Proyecto desarrollado siguiendo **AL-SDLC v1.2** (Agentic Legal Software Deliver
 
 | Servicio | URL |
 |----------|-----|
-| Frontend | http://localhost:3000 |
-| Backend API | http://localhost:8000 |
-| Swagger Docs | http://localhost:8000/docs |
+| Frontend (Producción) | https://ia-sandbox-governance.vercel.app |
+| Backend API (Producción) | https://ia-sandbox-governance-production.up.railway.app |
+| Swagger Docs | https://ia-sandbox-governance-production.up.railway.app/docs |
+| Frontend (Local) | http://localhost:3000 |
+| Backend API (Local) | http://localhost:8000 |
 | Supabase Dashboard | https://supabase.com/dashboard/project/rlisgwhdafgnmbauzynr |
+| GitHub Repository | https://github.com/moimene/ia-sandbox-governance |
 
 ---
 

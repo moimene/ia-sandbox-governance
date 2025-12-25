@@ -474,9 +474,8 @@ export interface AdditionalMeasureExtended {
     description: string | null
     file_name: string | null
     file_storage_path: string | null
-    documented_state: string
-    sedia_status: string
-    sedia_comments: string | null
+    sedia_evaluation_status: string
+    sedia_evaluator_comments: string | null
     created_at: string
 }
 
@@ -499,7 +498,8 @@ export async function createAdditionalMeasureForRequirement(
             requirement_code: requirementCode,
             title: data.title,
             description: data.description,
-            file_name: data.file_name
+            file_name: data.file_name,
+            sedia_evaluation_status: '00' // Default to pending
         })
         .select()
         .single()
