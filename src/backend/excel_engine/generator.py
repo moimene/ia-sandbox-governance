@@ -193,9 +193,11 @@ def render_measures(ws, measures: List[Dict]):
         {'id': 'MG_09_04', 'req': 'REQ_09', 'guide': 'Guía 12', 'desc': 'Gestión de modificaciones'},
     ]
     
-    for measure in sample_measures:
+    measures_to_render = measures if measures else sample_measures
+
+    for measure in measures_to_render:
         row += 1
-        values = [measure['id'], measure['req'], measure['guide'], measure['desc']]
+        values = [measure.get('id', ''), measure.get('req', ''), measure.get('guide', ''), measure.get('desc', '')]
         for col, value in enumerate(values, 1):
             cell = ws.cell(row=row, column=col, value=value)
             apply_style(cell, create_cell_style())
@@ -206,7 +208,7 @@ def render_measures(ws, measures: List[Dict]):
     ws.column_dimensions['D'].width = 60
 
 
-def render_rel_mg(ws):
+def render_rel_mg(ws, measures_map: Optional[Dict] = None):
     """Pestaña 5: Matriz de relación Medidas-Requisitos."""
     ws['A1'] = 'MATRIZ DE RELACIÓN MG - REQUISITOS'
     ws['A1'].font = Font(size=16, bold=True, color=GARRIGUES_GREEN)
@@ -224,7 +226,7 @@ def render_rel_mg(ws):
         apply_style(cell, create_header_style())
     
     # Matriz
-    measures_map = {
+    default_measures_map = {
         'MG_01_01': [1, 0, 0, 0],
         'MG_01_02': [1, 0, 0, 0],
         'MG_02_01': [0, 1, 0, 0],
@@ -234,7 +236,9 @@ def render_rel_mg(ws):
         'MG_09_02': [0, 0, 0, 1],
     }
     
-    for measure_id, mapping in measures_map.items():
+    map_to_render = measures_map if measures_map else default_measures_map
+
+    for measure_id, mapping in map_to_render.items():
         row += 1
         ws.cell(row=row, column=1, value=measure_id)
         apply_style(ws.cell(row=row, column=1), create_cell_style())
@@ -387,7 +391,7 @@ def generate_excel(application_data: Dict) -> bytes:
     
     # 5. Relación MG
     ws_rel_mg = wb.create_sheet("5. Relación MG")
-    render_rel_mg(ws_rel_mg)
+    render_rel_mg(ws_rel_mg, application_data.get('measures_map'))
     
     # 6. Autoev. MG
     ws_autoev_mg = wb.create_sheet("6. Autoev. MG")
