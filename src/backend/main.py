@@ -2,7 +2,13 @@
 FastAPI Backend - IA_Sandbox
 Sistema de Preevaluación Sandbox IA España
 """
+import os
 from typing import Optional, List
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
